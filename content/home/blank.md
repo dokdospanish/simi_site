@@ -24,6 +24,6 @@ Drag this link to your bookmarks bar to install: [Simi](javascript:alert('');)
 
 <div>
   
-  Hi
+  <a href="https://github.com/dokdospanish/simi/edit/main/content/home/blank.md">Hi</a>
   
 </div>
