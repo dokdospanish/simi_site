@@ -11,4 +11,4 @@ design:
   columns: '1'
 ---
 
-<a href="https:://www.google.com">Simi</a>
+[Duck Duck Go](https://duckduckgo.com)
