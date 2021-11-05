@@ -11,4 +11,4 @@ design:
   columns: '1'
 ---
 
-[Duck Duck Go](https://duckduckgo.com)
+This is a link: [Duck Duck Go](https://duckduckgo.com)
