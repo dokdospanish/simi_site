@@ -21,5 +21,3 @@ design:
 ---
 
 Drag this link to your bookmarks bar to install: [Simi](javascript:alert('');)
-
-[hi](javascript:alert('');)
