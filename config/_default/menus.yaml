@@ -7,6 +7,6 @@
 #  - name: Home
 #    url: /
 #   weight: 10
-#  - name: About
-#    url: about/
-#    weight: 20
+  - name: About
+    url: about/
+    weight: 20
