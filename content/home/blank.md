@@ -20,4 +20,76 @@ design:
   columns: '1'
 ---
 
-Drag this link to your bookmarks bar to install: [Simi](javascript:javascript:/*SETTINGS*/var suspiciousLimit = 90;/*Limit to relevant site*/var youAreHere = window.location.href;var re = /translators\.to/;if (re.test(youAreHere) == false) {if (window.confirm('Go to translators.to?%27))%20{window.location.href=%27https://www.translators.to%27;};}%20else%20{/*Reset*/var%20myElement%20=%20document.getElementById(%22injection%22);if(myElement){%20%20%20%20myElement.remove();}clearResults();/*PAGE%20SETUP*/var%20sourceWrapper%20=%20document.querySelector(%22.section%20.container%20.columns.is-desktop%20.column%20.field.source-content-wrapper%22);var%20dv%20=%20document.createElement(%22div%22);dv.innerHTML%20=%20`%3Cdiv%20class=%22field%20source-content-wrapper%22%20style=%22margin-top:12px;%22%20id=%22injection%22%3E%3Cdiv%20class=%22control%20is-relative%20control-textarea-wrapper%22%3E%3Ctextarea%20class=%22textarea%20source-content%22%20placeholder=%22%EB%B9%84%EA%B5%90%ED%95%A0%20%EC%9D%B8%EA%B0%84%20%EB%B2%88%EC%97%AD%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%98%EC%84%B8%EC%9A%94.%22%20maxlength=%22500%22%20dir=%22ltr%22%20style=%22height:%20100px;%22%20id=%22compArea%22%3E%3C/textarea%3E%3Cdiv%20class=%22field%20is-grouped%20is-marginless%22%3E%3Cp%20class=%22control%22%3E%3Cbutton%20class=%22button%20has-tooltip-top%22%20data-tooltip=%22%EB%AC%B8%EC%9E%A5%20%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0%22%20onclick=%22copyComparable()%22%20id=%22copyButton%22%3E%3Cspan%20class=%22icon%22%3E%3Ci%20class=%22far%20fa-copy%22%3E%3C/i%3E%3C/span%3E%3C/button%3E%3C/p%3E%3Cdiv%20id=%22spacer%22%20style=%22width:10px;border-right:WhiteSmoke%20solid%201px;%22%3E%3C/div%3E%3Cdiv%20id=%22spacer%22%20style=%22width:20px;border-left:WhiteSmoke%20solid%201px;%22%3E%3C/div%3E%3Cdiv%20id=%22high%22%20style=%22margin:8px%205px%200%205px%22%3E%3C/div%3E%3Cdiv%20id=%22avg%22%20style=%22margin:8px%205px%200%200px%22%3E%3C/div%3E%3Cdiv%20class=%22is-right-control-wrapper%22%3E%3Cp%20class=%22control%22%3E%3Ci%20class=%22fas%20fa-user%20fa-2x%22%20style=%22margin:5px%205px%200%205px%22%3E%3C/i%3E%3Cbutton%20class=%22button%20is-link%22%20title=%22%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0%20(ctrl+Enter)%22%20style%20=%22background-color:#ffdd57;color:rgba(0,0,0,.7);%22%20onclick=%22compareMain()%22%3ECOMPARE%3C/button%3E%3C/p%3E%3C/div%3E%3C/div%3E%3Cbutton%20class=%22button%20reset%20%22%20onclick=%22clearCompArea()%22%3E%3Ci%20class=%22fas%20fa-times%22%20style=%22vertical-align:%20bottom;%22%3E%3C/i%3E%3C/button%3E%3C/div%3E%3C/div%3E%60;sourceWrapper.append(dv);/*INITIALIZE%20PROVIDERS*/var%20Providers%20=%20{};Providers.google%20=%20{name:'Google',areaId:'googleNmt',logo:function(){document.querySelector(%22.label[for=googleNmt]%20.image-label%20img%22).src}};Providers.papago%20=%20{name:'Papago',areaId:'papago',logo:function(){document.querySelector(%22.label[for=papago]%20.image-label%20img%22).src}};Providers.kakao%20=%20{name:'Kakao',areaId:'kakao',logo:function(){document.querySelector(%22.label[for=kakao]%20.image-label%20img%22).src}};Providers.microsoft%20=%20{name:'Microsoft',areaId:'azure',logo:function(){document.querySelector(%22.label[for=kakao]%20.image-label%20img%22).src}};}/*----------------------------------------------------------------------------------*//*COMPARE%20BUTTON%20CLICK*/function%20compareMain()%20{clearResults();var%20targetHuman%20=%20document.getElementById(%22compArea%22).value;/*Loop%20through%20providers*/var%20keys%20=%20Object.keys(Providers);var%20i%20=%200;var%20sum%20=%200;var%20avgScore%20=%200;var%20highest%20=%200;keys.forEach((key,%20index)%20=%3E%20{var%20targetMachine%20=%20document.getElementById(Providers[key].areaId).value;if%20(targetMachine%20==%20%22%22)%20{return;}var%20score%20=%20compareTwoStrings(targetHuman,%20targetMachine);i++;sum%20+=%20score;avgScore%20=%20sum%20/%20i;if%20(score%20%3E%20highest)%20{highest%20=%20score;}displayResults(Providers[key].areaId,%20score);});displayHighest(highest);displayAvg(avgScore);}function%20displayResults(providerId,%20score){var%20logoNode%20=%20document.querySelector(%60.label[for=${providerId}]%60);var%20scoreNode%20=%20document.createElement('p');scoreNode.classList.add('scoreCard');scoreNode.textContent%20=%20score.toFixed(2).replace(/[.,]00$/,%20%22%22)%20+%20'%';scoreNode.style.lineHeight%20=%20'40px';scoreNode.style.paddingLeft%20=%20'10px';scoreNode.style.cursor%20=%20'text';if%20(score%20%3E=%20suspiciousLimit)%20{scoreNode.style.color%20=%20'red';}logoNode.parentNode.insertBefore(scoreNode,%20logoNode.nextSibling);}function%20displayHighest(highest){var%20highNode%20=%20document.getElementById('high');if%20(highest%20%3E=%20suspiciousLimit)%20{highNode.style.color%20=%20'red';}highNode.textContent%20=%20'Highest:%20'%20+%20highest.toFixed(2).replace(/[.,]00$/,%20%22%22)%20+%20'%';}function%20displayAvg(avgScore){var%20avgNode%20=%20document.getElementById('avg');if%20(avgScore%20%3E=%20suspiciousLimit)%20{avgNode.style.color%20=%20'red';}avgNode.textContent%20=%20'|%20%20%20%20Average:%20'%20+%20avgScore.toFixed(2).replace(/[.,]00$/,%20%22%22)%20+%20'%';}/*MEAT*/function%20compareTwoStrings(first,%20second)%20{first%20=%20first.replace(/\s+/g,%20'');second%20=%20second.replace(/\s+/g,%20'');if%20(first%20===%20second)%20return%20100;%20/*%20identical%20or%20empty%20*/if%20(first.length%20%3C%202%20||%20second.length%20%3C%202)%20return%200;%20/*%20if%20either%20is%20a%200-letter%20or%201-letter%20string%20*/let%20firstBigrams%20=%20new%20Map();for%20(let%20i%20=%200;%20i%20%3C%20first.length%20-%201;%20i++)%20{const%20bigram%20=%20first.substring(i,%20i%20+%202);const%20count%20=%20firstBigrams.has(bigram)?%20firstBigrams.get(bigram)%20+%201:%201;firstBigrams.set(bigram,%20count);};let%20intersectionSize%20=%200;for%20(let%20i%20=%200;%20i%20%3C%20second.length%20-%201;%20i++)%20{const%20bigram%20=%20second.substring(i,%20i%20+%202);const%20count%20=%20firstBigrams.has(bigram)?%20firstBigrams.get(bigram):%200;if%20(count%20%3E%200)%20{firstBigrams.set(bigram,%20count%20-%201);intersectionSize++;}}return%20(2.0%20*%20intersectionSize)%20/%20(first.length%20+%20second.length%20-%202)%20*%20100;}/*HELPERS*/function%20copyComparable()%20{var%20copiable%20=%20document.getElementById(%22compArea%22);var%20copyBtn%20=%20document.getElementById(%22copyButton%22);copiable.select();copiable.setSelectionRange(0,%2099999);%20/*%20For%20mobile%20devices%20*/if%20(copiable.value%20!=%20'')%20{navigator.clipboard.writeText(copiable.value);copyBtn.focus();toast();}}function%20toast()%20{var%20elemDiv%20=%20document.createElement('div');document.body.appendChild(elemDiv);elemDiv.innerHTML%20=%20'%3Cdiv%20class=%22Toastify%22%3E%3Cdiv%20class=%22Toastify__toast-container%20Toastify__toast-container--bottom-left%22%3E%3Cdiv%20id=%22yxx5iumlv0%22%20class=%22Toastify__toast%20Toastify__toast--dark%22%20style=%22animation-fill-mode:%20forwards;%20animation-duration:%20750ms;%22%3E%3Cdiv%20role=%22alert%22%20class=%22Toastify__toast-body%22%3E%3Cdiv%20class=%22toast-content%22%3E%EB%B3%B5%EC%82%AC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%3C/div%3E%3C/div%3E%3C/div%3E%3C/div%3E%3C/div%3E%3C/div%3E';/*Remove%20element*/setTimeout(function%20()%20{elemDiv.remove();},%202000);}function%20clearCompArea()%20{document.getElementById(%22compArea%22).value='';document.getElementById(%22compArea%22).focus();}function%20clearResults()%20{/*Clear%20summary*/if%20(document.getElementById('high'))%20{document.getElementById('high').textContent='';document.getElementById('high').style.color%20=%20'black';}if%20(document.getElementById('avg'))%20{document.getElementById('avg').textContent='';document.getElementById('avg').style.color%20=%20'black';}/*Clear%20individual%20results*/removeElementsByClass('scoreCard');}function%20removeElementsByClass(className){%20%20%20%20const%20elements%20=%20document.getElementsByClassName(className);%20%20%20%20while(elements.length%20%3E%200){%20%20%20%20%20%20%20%20elements[0].parentNode.removeChild(elements[0]);%20%20%20%20}}/*EVENTS*/var%20bothInputAreas%20=%20document.querySelector(%22.section%20.container%20.columns.is-desktop%20.column%20.field.source-content-wrapper%22);bothInputAreas.addEventListener('input',%20function()%20{clearResults();bothInputAreas.addEventListener('keyup',%20function(event)%20{if%20(event.ctrlKey%20&&%20event.key%20===%20'Enter'%20&&%20document.activeElement%20===%20document.getElementById('compArea'))%20{event.preventDefault();compareMain();%20%20}})}))
+Drag this link to your bookmarks bar to install: [Simi](javascript:alert('');)
+
+{{ $ := .root }}
+{{ $page := .page }}
+
+{{ $author := "" }}
+{{ if .author }}
+  {{ $author = .author }}
+{{ else }}
+  {{ $author = $page.Params.author }}
+{{end}}
+
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one does not already exist. See https://sourcethemes.com/academic/docs/page-builder/#about " $person_page_path }}
+{{end}}
+{{ $person := $person_page.Params }}
+{{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $avatar_shape := site.Params.avatar.shape | default "circle" }}
+
+<!-- About widget -->
+<div class="row">
+  <div class="container centered">
+    <div id="profile">
+
+      {{ if site.Params.avatar.gravatar }}
+      <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
+      {{ else if $avatar }}
+      {{ $avatar_image := $avatar.Fill "270x270 Center" }}
+      <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
+      {{ end }}
+
+      <div class="portrait-title">
+        <h2>{{ $person_page.Title }}</h2>
+        {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+
+        {{ range $person.organizations }}
+        <h3>
+          {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+          <span>{{ .name }}</span>
+          {{ if .url }}</a>{{ end }}
+        </h3>
+        {{ end }}
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        {{ range $person.social }}
+        {{ $pack := or .icon_pack "fas" }}
+        {{ $pack_prefix := $pack }}
+        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+          {{ $pack_prefix = "fa" }}
+        {{ end }}
+        {{ $link := .link }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = .link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <li>
+          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
+            <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </div>
+  
+</div>
