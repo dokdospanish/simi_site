@@ -21,3 +21,4 @@ design:
 ---
 
 Drag this link to your bookmarks bar to install: [Simi](javascript:alert('');)
+[hello](javascript:alert('2%2A2');)
