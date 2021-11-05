@@ -20,8 +20,8 @@ design:
   columns: '1'
 ---
 
-Drag this link to your bookmarks bar to install: [hi](javascript:('');)
+Drag this link to your bookmarks bar to install: [hi](javascript:alert('');)
 
 <div>
-  <a href="javascript:('');">hello</a>
+  <a href="javascript:alert('');">hello</a>
  </div>
