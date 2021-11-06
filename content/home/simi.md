@@ -19,11 +19,9 @@ design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
 ---
-<style>
-  .btnX:hover {
-    background-color: red;
-  }
-</style>
+<script>
+  alert('hi');
+</script>
 
 
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
