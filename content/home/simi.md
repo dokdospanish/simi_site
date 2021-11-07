@@ -37,7 +37,7 @@ href="javascript:%0Alet%20suspiciousLimit%20%3D%2085%3B%0A%0A%0Alet%20site%2C%20
 
 </div>
  
-<div style="border-top:black solid 3px;"></div>
+<div style="border: solid black 3px;">hi</div>
   
 </div>
 
