@@ -26,7 +26,7 @@ Drag this button to your bookmarks bar:
 <a onMouseOver="this.style.border='mediumaquamarine solid 3px'; this.style.color='aquamarine'"
    onMouseOut="this.style.border='transparent solid 3px'; this.style.color='snow'"
    style="color: snow; background-color: mediumseagreen; border: transparent solid 3px; padding: 3px 20px;border-radius: 15px; margin: 15px;"
-href="javascript:alert('');">Simi</a>
+href="javascript:alert('');">Compi</a>
 </div>
 
 
