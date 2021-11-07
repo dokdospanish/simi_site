@@ -30,3 +30,7 @@ href="javascript:%0Alet%20suspiciousLimit%20%3D%2085%3B%0A%0A%0Alet%20site%2C%20
 </div>
 
 
+        <p>Make results <span style="color:red; font-weight: bold;">red</span> if they exceed
+           <input type="number" value="85"  min="0" max="100" style="width: 50px; font-size:21px; text-align: right;" onKeyDown="return false">
+        <span style="font-size:21px;">%</span> similarity.
+    </p>
