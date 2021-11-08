@@ -21,8 +21,9 @@ design:
 ---
 
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-Drag this button to your bookmarks bar to compare by <span style="font-family: 'Courier New', monospace; background-color:white;">charac<span style="background-color:tomato;">hter</span> starting from:
-<br>
+<p>Drag this button to your bookmarks bar to compare by <span style="font-family: 'Courier New', monospace; background-color:white; font-weight; bold:">charac<span style="background-color:tomato;">h</span><span style="background-color:palegreen;">t</span>er</span>:
+</p>
+
 <a id="simiLink" onMouseOver="this.style.border='mediumaquamarine solid 3px'; this.style.color='aquamarine'"
    onMouseOut="this.style.border='transparent solid 3px'; this.style.color='snow'"
    style="color: snow; background-color: mediumseagreen; border: transparent solid 3px; padding: 3px 20px;border-radius: 15px; margin: 15px;"
