@@ -21,7 +21,7 @@ design:
 ---
 
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-<p>Drag this button to your bookmarks to compare by <span style="font-family: 'Courier New', monospace; background-color:white; font-weight: bold;">charac<span style="background-color:tomato;">h</span><span style="background-color:palegreen;">t</span>er</span> :
+<p>Drag this button to your bookmarks to compare by <span style="font-family: 'Courier New', monospace; background-color:white; font-weight: bold;">CHARAC<span style="background-color:tomato; text-decoration: line-through;">H</span><span style="background-color:palegreen;">T</span>ER</span> :
 </p>
  <p>
    (recommended for Asian languages)
@@ -33,7 +33,7 @@ href="javascript:unit%20%3D%20%27char%27%3B%20%2F%2A%20%27char%27%7C%27word%27%2
 </div>
 
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-<p>Drag this button to your bookmarks to compare by <span style="font-family: 'Courier New', monospace; background-color:white; font-weight: bold;"><span style="background-color:tomato;">wodr</span><span style="background-color:palegreen;">word</span>er</span> :
+<p>Drag this button to your bookmarks to compare by <span style="font-family: 'Courier New', monospace; background-color:white; font-weight: bold;"><span style="background-color:tomato; text-decoration: line-through;">WODR</span><span style="background-color:palegreen;">WORD</span></span> :
 </p>
  <p>
    (recommended for European languages)
