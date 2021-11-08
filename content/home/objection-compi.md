@@ -37,7 +37,7 @@ href="javascript:unit%20%3D%20%27char%27%3B%20%2F%2A%20%27char%27%7C%27word%27%2
 <p style="margin:0;">
 Drag this button to your bookmarks to compare by <span style="font-family: 'Courier New', monospace; background-color:white; font-weight: bold;"><span style="background-color:tomato; text-decoration: line-through;">WODR</span><span style="background-color:palegreen;">WORD</span></span> :
 </p>
- <p style="margin:0; font-size: 80%;">
+ <p style="margin-top: 20px; font-size: 80%;">
    (recommended for European languages)
  </p>
 <a id="simiLink" onMouseOver="this.style.border='mediumaquamarine solid 3px'; this.style.color='aquamarine'"
