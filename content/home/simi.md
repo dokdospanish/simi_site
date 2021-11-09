@@ -28,7 +28,7 @@ design:
 </p>  
 
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-Drag this button to your bookmarks bar:
+Drag this button to your bookmarks bar (ctrl + shift + B):
 <br>
 <a id="simiLink" onMouseOver="this.style.border='mediumaquamarine solid 3px'; this.style.color='aquamarine'"
    onMouseOut="this.style.border='transparent solid 3px'; this.style.color='snow'"
