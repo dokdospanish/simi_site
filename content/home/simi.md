@@ -37,6 +37,11 @@ href="javascript:%2F%2ASimi%20V1.0%2A%2F%0A%0A%2F%2ASETTINGS%2A%2F%0AsusLimit%20
 
 </div>
  
+  <p style="margin:0; font-size: 80%;">
+   Use it at translators.to and Flitto's APi demo.
+ </p> 
+ 
+  
 <div style="border-top: solid black 3px; border-bottom: solid black 3px; width: 50%; padding: 5px; margin-top: 30px;"></div>
   
 </div>
