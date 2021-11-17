@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 100
 
-title: Similarity Check
+title:
 subtitle:
 
 design:
@@ -23,8 +23,6 @@ design:
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
   
 <div style="border-top: solid black 3px; border-bottom: solid black 3px; width: 50%; padding: 5px; margin-top: 60px;"></div>
-  
-</div> 
  
 <p style="margin:0; font-size: 120%;">
     <a href="https://github.com/dokdospanish/bookmarklets/">View source</a>
