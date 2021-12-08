@@ -22,7 +22,7 @@ design:
 
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
  
-<p style="margin:0; font-size: 150%;">
+<p style="margin:0; font-size: 120%;">
     <a href="https://github.com/dokdospanish/bookmarklets/">View source</a>
 </p>
 
