@@ -27,7 +27,13 @@ design:
 </p>
 
 </div>
- 
+
+        <script type="text/javascript">
+        function codeAddress() {
+            alert('ok');
+        }
+        window.onload = codeAddress;
+        </script>
  
 
 
