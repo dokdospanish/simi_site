@@ -8,4 +8,4 @@ headless: true
 
 <script>
   alert('hi');
- </script
+ </script>
